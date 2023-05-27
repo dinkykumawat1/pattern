@@ -13,6 +13,25 @@ pattern 9
  #include <iostream>
 
 using namespace std;
+
+void pat(int n) {
+    // Write your code here.
+    for(int i=0;i<n;i++)
+    {
+        for(int j=0;j<n-i-1;j++)
+        {
+          cout<<" " ; 
+        }
+        for(int j=0;j<2*i+1;j++)
+        {
+           cout<<"*";
+        }
+        for(int j=0;j<n-i-1;j++)
+        {
+             cout<<" ";
+        }
+        cout<<endl;
+    }
 void nStarTriangle(int n) {
     // Write your code here.
     for(int i=0;i<n;i++)
@@ -37,6 +56,7 @@ int main()
 {
    int n;
    cin>>n;
+   pat(int n)
    nStarTriangle(n);
     return 0;
 }
